@@ -1,0 +1,165 @@
+body {
+  color: #979797;
+  /* overflow: hidden; */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  height: 840px;
+  background: url('../img/header-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.header__main {
+  position: absolute;
+  top: 59%;
+}
+
+.header__main h1 {
+  font-size: 36px;
+}
+
+.header__main p {
+  font-size: 18px;
+}
+
+.color--main {
+  color: #FF6065;
+}
+
+.bg--main {
+  background: #FF6065;
+}
+
+.container--custom {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.col--no-pading {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.feature-services {
+  padding-bottom: 100px;
+}
+
+.feature-services__box {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0,.22);
+  border-radius: 20px;
+  padding: 40px 20px 75px;
+  min-height: 408px;
+}
+
+.feature-services__header {
+  margin-bottom: 25px;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.feature-services__icon {
+  font-size: 40px;
+  margin-right: 18px;
+}
+
+.feature-services__title {
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+}
+
+.feature-services__button {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  padding: 17px;
+  width: 147px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+}
+
+.video-box {
+  position: relative;
+  padding: 150px 0 150px;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+  overflow-y:  visible;
+}
+
+.link--no-style {
+  color: inherit;
+}
+
+.link--no-style:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn-large {
+  display: inline-block;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.video-box__video {
+  width: 460px;
+  height: 315px;
+  position: relative;
+  z-index: 5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-box__oval {
+  position: absolute;
+  right: -60px;
+  top: 80px;
+  z-index: 1;
+}
+
+.video-box__heading {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.progress-box {
+  background: #fff;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .18);
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.progress-box__svg-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.progress-box__heading {
+  margin-bottom: 60px;
+}
+
+.progress-box__heading i {
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.progress-box__heading span {
+  position: relative;
+  bottom: 7px;
+}
+
+.progress-box__item h3 {
+  margin-bottom: 25px;
+}
