@@ -160,6 +160,24 @@ body {
   bottom: 7px;
 }
 
-.progress-box__item h3 {
+.progress-box__item h3,
+.multi-services__item h3 {
   margin-bottom: 25px;
+}
+
+.multi-services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.multi-services__ico-header {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.progress-circle {
+  margin: 20px;
+  width: 100%;
+  height: 200px;
+  position: relative;
 }
