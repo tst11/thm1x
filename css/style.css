@@ -28,6 +28,8 @@ body {
 
 .color--main {
   color: #FF6065;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .bg--main {
@@ -48,7 +50,8 @@ body {
   padding-bottom: 100px;
 }
 
-.feature-services__box {
+.feature-services__box,
+.carousels-team__box {
   position: relative;
   background: #fff;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0,.22);
@@ -175,9 +178,44 @@ body {
   margin-bottom: 10px;
 }
 
+.circle-progress {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .18);
+}
+
 .progress-circle {
-  margin: 20px;
   width: 100%;
   height: 200px;
   position: relative;
+  margin-bottom: 25px;
+}
+
+.circle-progress__liner {
+  display: inline-block;
+  height: 100%;
+  width: 3px;
+  border-left: 3px solid #FF6062;
+  margin-left: 20px;
+}
+
+.circle-progress__text {
+  display: inline-block;
+  width: 400px;
+  text-align: justify;
+  margin-left: 25px;
+  position: relative;
+  bottom: 60px;
+}
+
+.circle-progress__note {
+  font-size: 20px;
+}
+
+.carousels-team__role {
+  color: #6C6C6C;
+  display: block;
+  font-size: 11px;
+  font-weigth: 400;
 }
