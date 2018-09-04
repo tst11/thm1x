@@ -28,8 +28,6 @@ body {
 
 .color--main {
   color: #FF6065;
-  font-weight: bold;
-  font-size: 22px;
 }
 
 .bg--main {
@@ -51,7 +49,8 @@ body {
 }
 
 .feature-services__box,
-.carousels-team__box {
+.carousels-team__box,
+.carousels-review__box {
   position: relative;
   background: #fff;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0,.22);
@@ -209,13 +208,130 @@ body {
   bottom: 60px;
 }
 
+.carousels-team__box,
+.carousels-review__box {
+  padding: 25px 20px;
+  min-height: 341px;
+  position: relative;
+}
+
 .circle-progress__note {
   font-size: 20px;
+}
+
+.carousels {
+  position: relative;
+  width: 100%;
+}
+
+.carousels-team__header,
+.carousels-review__header {
+  font-weight: bold;
+  font-size: 22px; 
+}
+
+.carousels-team__header p {
+  line-height: 0.8;
+  margin-bottom: 4px;
 }
 
 .carousels-team__role {
   color: #6C6C6C;
   display: block;
-  font-size: 11px;
-  font-weigth: 400;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.carousels-team__content,
+.carousels-review__content {
+  margin-top: 35px;
+  text-align: justify;
+}
+
+.carousels-team__footer,
+.carousels-review__footer {
+  position: relative;
+  margin-top: 40px;
+}
+
+.carousels-team__img,
+.carousels-review__img {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.18);
+  margin-right: 10px;
+}
+
+.carousels-team__img img,
+.carousels-review__img img {
+  height: 100%;
+}
+
+.carousels-team__fcontent,
+.carousels-review__fcontent {
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+}
+
+.carousels-team__fcontent p,
+.carousels-review__fcontent p {
+  line-height: 0.8;
+}
+
+.carousels-team__fcontent p:first-child,
+.carousels-review__fcontent p:first-child {
+  margin-bottom: 5px;
+}
+
+.carousels-team__fcontent p:nth-child(2),
+.carousels-review__fcontent p:nth-child(2) {
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.carousels-team__social,
+.carousels-review__social {
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+}
+
+.carousels-team__social i,
+.carousels-review__social i {
+  color: #979797;
+}
+
+.carousels-review__box {
+  border-radius: 0;
+}
+
+.carousels-review__header {
+  color: #FFA372;
+}
+
+.carousels__heading {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  color: #fff;
+}
+
+.reviews-margin-b {
+  margin-bottom: 120px;
+}
+
+.carousels__oval {
+  position: absolute;
+  top: -40px;
+  right: -110px;
+  z-index: -1;
+}
+
+footer {
+  background: #4A3F89;
 }
