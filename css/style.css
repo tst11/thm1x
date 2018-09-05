@@ -334,4 +334,63 @@ body {
 
 footer {
   background: #4A3F89;
+  color: #fff;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.footer__logo {
+  margin-bottom: 25px;
+}
+
+.footer__social i {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 3px;
+}
+
+.footer__col p {
+  margin-top: 10px;
+}
+
+.footer__col li {
+  margin-bottom: 7px;
+}
+
+.footer__email {
+  display: block;
+  width: 200px;
+  padding: 5px 10px;
+}
+
+.footer__btn {
+  cursor: pointer;
+  width: 200px;
+  background: #FF6061;
+  border: none;
+  color:  #fff;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.footer__btn:focus {
+  outline: none;
+}
+
+.scrollable-box {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.scrollable-box::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.scrollable-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.scrollable-box::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
