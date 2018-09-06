@@ -7,10 +7,16 @@ body {
 
 .header {
   position: relative;
-  height: 840px;
-  background: url('../img/header-bg.png');
+  height: 750px;
+  /*background: url('../img/header-bg.png');*/
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+.header__path {
+  /* height: 627px; */
+  width: 100%;
+  height: 627px;
 }
 
 .header__main {
@@ -378,19 +384,33 @@ footer {
 }
 
 .scrollable-box {
-  height: 150px;
   overflow-y: scroll;
+  padding-right: 7px;
 }
 
 .scrollable-box::-webkit-scrollbar {
-    width: 1em;
+    width: 4px;
 }
  
 .scrollable-box::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
  
 .scrollable-box::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: #FF6061;
   outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+.feature-services__content p {
+  height: 168px;
+}
+
+.carousels-team__content p {
+  height: 140px;
+}
+
+.carousels-review__content p {
+  height: 120px;
 }
