@@ -228,6 +228,7 @@ body {
 .carousels {
   position: relative;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .carousels-team__header,
@@ -413,4 +414,14 @@ footer {
 
 .carousels-review__content p {
   height: 120px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0,0,0,.3);
 }
