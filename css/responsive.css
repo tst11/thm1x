@@ -1,3 +1,42 @@
+@media (max-width: 767.98px) {
+  .circle-progress .col-md-4 {
+    margin-bottom: 25px;
+  }
+
+  .progress-circle {
+    width: 220px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .circle-progress__liner {
+    display: none;
+  }
+
+  .circle-progress__text {
+    position: static;
+    margin-bottom: 0;
+    padding-right: 20px;
+    border-left: 3px solid #FF6062;
+    padding-left: 25px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .circle-progress__text {
+    padding-right: 15px;
+    top: 75px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container--custom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media (min-width: 1920px) {
   header {
     background-size: 100% 100%;
