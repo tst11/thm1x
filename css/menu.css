@@ -1,6 +1,7 @@
 .menu-item,
 .menu-open-button {
-   background: #EEEEEE;
+   z-index: 9;
+   background: #fff;
    border-radius: 100%;
    width: 80px;
    height: 80px;
@@ -24,7 +25,7 @@
 .lines {
    width: 25px;
    height: 3px;
-   background: #596778;
+   background: #979797;
    display: block;
    position: absolute;
    top: 50%;
@@ -70,10 +71,10 @@
 .menu {
    /* margin: auto; */
    position: absolute;
-   top: 20px;
+   top: 115px;
    /* bottom: 0; */
    /* left: 0; */
-   right: 20px;
+   right: 110px;
    width: 80px;
    height: 80px;
    text-align: center;
@@ -127,7 +128,7 @@
 }
 
 .menu-open-button {
-   z-index: 2;
+   z-index: 9999;
    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
    -webkit-transition-duration: 400ms;
@@ -135,7 +136,7 @@
    -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
    cursor: pointer;
-   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+   box-shadow: 0 2px 10px 0 rgba(0, 0, 0,.22);
 }
 
 .menu-open-button:hover {
@@ -270,6 +271,21 @@
 .lightblue:hover {
    color: #62C2E4;
    text-shadow: none;
+}
+
+.menu-item {
+  background: #fff !important;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0,.22);
+  color: #FF6065 !important;
+  /*-webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;*/
+}
+
+.menu-item:hover {
 }
 
 .credit {

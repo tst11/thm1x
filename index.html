@@ -14,35 +14,17 @@
   </head>
   <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="logo-head">
       <div class="container-fluid container--custom">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <!--<li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SKILLS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TEAM</a>
-            </li>-->
-            <!--<li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>-->
-            <li class="nav-item">
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-12">
+            <div class="logo-head__box">
+              <img src="img/logo.png" alt="Logo">
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
     <nav class="menu">
       <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
@@ -52,12 +34,12 @@
         <span class="lines line-3"></span>
       </label>
 
-      <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
-      <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
-      <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
-      <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
-      <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
-      <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+      <a href="#main-services" class="menu-item"> <i class="fas fa-code"></i></a>
+      <a href="#about" class="menu-item green"> <i class="fas fa-building"></i> </a>
+      <a href="#progress" class="menu-item red"> <i class="fas fa-chart-pie"></i> </a>
+      <a href="#skills" class="menu-item purple"> <i class="fas fa-file-contract"></i> </a>
+      <a href="#team" class="menu-item orange"> <i class="fas fa-users"></i> </a>
+      <a href="#review" class="menu-item lightblue"> <i class="fas fa-comments"></i> </a>
     </nav>
 
     <!-- Page Header -->
@@ -72,7 +54,7 @@
     </header><!-- End of Page Header -->
 
     <!-- Feature services element -->
-    <section class="feature-services">
+    <section id="main-services" class="feature-services">
       <div class="container-fluid container--custom">
         <!-- Start of main features row -->
         <div class="row justify-content-around">
@@ -142,7 +124,7 @@
     </section><!-- End of feature services element -->
     
     <!-- Video Section with text -->
-    <section class="video-box">
+    <section id="about" class="video-box">
       <div class="container-fluid container--custom">
         <div class="row justify-content-between">
 
@@ -167,7 +149,7 @@
     </section><!-- End of Video Section with text -->
 
     <!-- Progress section -->
-    <section class="progress-box">
+    <section id="progress" class="progress-box">
       <div class="container-fluid container--custom">
         
         <div class="row">
@@ -212,7 +194,7 @@
     </section>
 
     <!-- Services multiple section -->
-    <section class="multi-services">
+    <section id="skills" class="multi-services">
       <div class="container-fluid container--custom">
 
         <div class="row justify-content-around">
@@ -321,7 +303,7 @@
     </section>
 
     <!-- Team & Review Carousel Section -->
-    <section class="carousels">
+    <section id="team" class="carousels">
       <div class="container-fluid container--custom">
 
         <div class="row carousels__heading">
@@ -411,7 +393,7 @@
 
         </div>
 
-        <div class="row carousels__heading">
+        <div id="review" class="row carousels__heading">
           <div class="col-12 text-center">
             <h2>Clients reviews</h2>
           </div>
@@ -511,6 +493,12 @@
         <img class="carousels__oval" src="img/review-oval.svg">
       </div>
     </section>
+
+    <a href="#">
+      <div class="to-top">
+          <i class="fas fa-arrow-up"></i>
+      </div>
+    </a>
 
     <footer>
       <div class="container-fluid container--custom">
