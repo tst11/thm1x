@@ -1,3 +1,13 @@
+@media (max-width: 575.98px) {
+  .menu {
+    z-index: 9;
+    right: 50% !important;
+    -ms-transform: translate(50%, 0); /* IE 9 */
+    -webkit-transform: translate(50%, 0); /* Safari */
+    transform: translate(50%, 0);
+  }
+}
+
 @media (max-width: 767.98px) {
   .circle-progress .col-md-4 {
     margin-bottom: 25px;
@@ -24,6 +34,15 @@
 }
 
 @media (max-width: 991.98px) {
+  .header {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header__path {
+    width: auto;
+  }
+
   .circle-progress__text {
     padding-right: 15px;
     top: 75px;
@@ -34,6 +53,18 @@
   .container--custom {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .header__main {
+    max-width: 489px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container--custom {
+    max-width: 1240px !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
