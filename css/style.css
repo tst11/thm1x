@@ -401,10 +401,10 @@ footer {
 
 .scrollable-box {
   overflow-y: scroll;
-  padding-right: 7px;
+  /*padding-right: 7px;*/
 }
 
-.scrollable-box::-webkit-scrollbar {
+/*.scrollable-box::-webkit-scrollbar {
     width: 4px;
 }
  
@@ -417,18 +417,18 @@ footer {
   background-color: #FF6061;
   outline: 1px solid slategrey;
   border-radius: 10px;
-}
+}*/
 
 .feature-services__content p {
-  height: 168px;
+  height: 190px;
 }
 
 .carousels-team__content p {
-  height: 140px;
+  height: 145px;
 }
 
 .carousels-review__content p {
-  height: 120px;
+  height: 145px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -468,4 +468,18 @@ footer {
 .to-top:hover {
    -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.header__menu {
+  position: relative;
+}
+
+.video-box__col {
+  position: relative;
+  z-index: 5;
+}
+
+iframe {
+  width: 460px;
+  height: 315px;
 }

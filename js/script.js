@@ -97,3 +97,7 @@ var bar = new ProgressBar.Circle('#progress-circle3', {
 bar.text.style.fontSize = '2rem';
 
 bar.animate(0.75);  // Number from 0.0 to 1.0
+
+AOS.init({
+  duration: 1000
+});

@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/aos/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/menu.css">
   </head>
   <body>
 
-    <nav class="menu">
-      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-      <label class="menu-open-button" for="menu-open">
-        <span class="lines line-1"></span>
-        <span class="lines line-2"></span>
-        <span class="lines line-3"></span>
-      </label>
-
-      <a href="#main-services" class="menu-item"> <i class="fas fa-code"></i></a>
-      <a href="#about" class="menu-item green"> <i class="fas fa-building"></i> </a>
-      <a href="#progress" class="menu-item red"> <i class="fas fa-chart-pie"></i> </a>
-      <a href="#skills" class="menu-item purple"> <i class="fas fa-file-contract"></i> </a>
-      <a href="#team" class="menu-item orange"> <i class="fas fa-users"></i> </a>
-      <a href="#review" class="menu-item lightblue"> <i class="fas fa-comments"></i> </a>
-    </nav>
-
     <!-- Page Header -->
     <header class="header">
       <div class="container-fluid container--custom">
         <div class="logo-head__box">
           <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="header__menu">
+          <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+            <label class="menu-open-button" for="menu-open">
+              <span class="lines line-1"></span>
+              <span class="lines line-2"></span>
+              <span class="lines line-3"></span>
+            </label>
+
+            <a href="#main-services" class="menu-item"> <i class="fas fa-code"></i></a>
+            <a href="#about" class="menu-item green"> <i class="fas fa-building"></i> </a>
+            <a href="#progress" class="menu-item red"> <i class="fas fa-chart-pie"></i> </a>
+            <a href="#skills" class="menu-item purple"> <i class="fas fa-file-contract"></i> </a>
+            <a href="#team" class="menu-item orange"> <i class="fas fa-users"></i> </a>
+            <a href="#review" class="menu-item lightblue"> <i class="fas fa-comments"></i> </a>
+          </nav>
         </div>
         <div class="header__main">
           <h1>Ultimate team for your <span class="color--main">business</span></h1>
@@ -45,13 +47,13 @@
     </header><!-- End of Page Header -->
 
     <!-- Feature services element -->
-    <section id="main-services" class="feature-services">
+    <section id="main-services" class="feature-services" data-aos="fade-in">
       <div class="container-fluid container--custom">
         <!-- Start of main features row -->
         <div class="row justify-content-around">
 
           <!-- First item of main features row -->
-          <div class="col-md-3 col--no-pading">
+          <div class="col-lg-3 boxes-col col--no-pading">
             <div class="feature-services__box text-center">
 
               <div class="feature-services__header">
@@ -71,7 +73,7 @@
           </div><!-- End of First item of main features row -->
 
           <!-- Second item of main features row -->
-          <div class="col-md-3 col--no-pading">
+          <div class="col-lg-3 boxes-col col--no-pading">
             <div class="feature-services__box text-center">
 
               <div class="feature-services__header">
@@ -91,7 +93,7 @@
           </div><!-- End of Second item of main features row -->
           
           <!-- Third item of main features row -->
-          <div class="col-md-3 col--no-pading">
+          <div class="col-lg-3 boxes-col col--no-pading">
             <div class="feature-services__box text-center">
 
               <div class="feature-services__header">
@@ -116,24 +118,25 @@
     
     <!-- Video Section with text -->
     <section id="about" class="video-box">
-      <div class="container-fluid container--custom">
+      <div class="container-fluid container--custom container--md-p video-box__container">
         <div class="row justify-content-between">
 
           <!-- Text column -->
-          <div class="col-md-5">
+          <div class="col-md-5 video-box__col" data-aos="fade-in">
             <h2 class="video-box__heading">We are digital</h2>
             <p class="text-justify">Our expertise is in the digital products and we always strive to achieve the most out of our products. We take as small as a single idea and turn it into the operating business, by designing, developing and marketing the product. The biggest challange is to make it a sustainable business, that can scal. This is where our professionals comes into play.</p>
-            <a class="btn-large bg--main link--no-style float-right" href="#">More Details</a>
+            <a class="btn-large bg--main link--no-style float-left float-md-right" href="#">More Details</a>
           </div><!-- End of Text column -->
 
           <!-- Video column -->
-          <div class="col-md-5">
+          <div class="col-md-5 video-box__col box__col--relative-sm" data-aos="fade-in" data-aos-delay="400" data-aos-once="true">
             <div class="video-box__video">
-              <iframe width="460" height="315" src="https://www.youtube.com/embed/sByzHoiYFX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/sByzHoiYFX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
+            <img class="video-box__oval oval--sm" src="img/color-oval.svg" alt="Colorful Oval">
           </div><!-- End of Video column -->
 
-          <img class="video-box__oval" src="img/color-oval.svg" alt="Colorful Oval">
+          <img class="video-box__oval oval--md" src="img/color-oval.svg" alt="Colorful Oval" data-aos="fade-left" data-aos-delay="400" data-aos-once="true">
 
         </div>
       </div>
@@ -149,7 +152,7 @@
           </div>
         </div>
 
-        <div class="row justify-content-around">
+        <div class="row justify-content-around" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
 
           <div class="col-md-3">
             <div class="progress-box__item text-center">
@@ -188,7 +191,7 @@
     <section id="skills" class="multi-services">
       <div class="container-fluid container--custom">
 
-        <div class="row justify-content-around">
+        <div class="row justify-content-around" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
 
           <!-- Services multiple section item -->
           <div class="col-md-3">
@@ -225,7 +228,7 @@
 
         </div>
 
-        <div class="row justify-content-around mt-5">
+        <div class="row justify-content-around mt-5" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
 
           <!-- Services multiple section item -->
           <div class="col-md-3">
@@ -267,9 +270,9 @@
 
     <!-- Circle progress section -->
     <section class="circle-progress">
-      <div class="container-fluid container--custom">
+      <div class="container-fluid container--custom container--md-p">
         <div class="row justify-content-between">
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="fade-in" data-aos-duration="1500">
             <div class="row">
               <div class="col-md-4 text-center">
                 <div id="progress-circle1" class="progress-circle"></div>
@@ -295,7 +298,7 @@
 
     <!-- Team & Review Carousel Section -->
     <section id="team" class="carousels">
-      <div class="container-fluid container--custom">
+      <div class="container-fluid container--custom carousels-container">
 
         <div class="row carousels__heading">
           <div class="col-12 text-center">
@@ -304,7 +307,7 @@
         </div>
         <div class="row justify-content-around">
 
-          <div class="col-md-3 col--no-pading">
+          <div class="col-3 col--no-pading">
             <div class="carousels-team__box">
               <div class="carousels-team__header text-center color--main">
                 <p>Albert Jhon.</p>
@@ -330,7 +333,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col--no-pading">
+          <div class="col-3 col--no-pading">
             <div class="carousels-team__box">
               <div class="carousels-team__header text-center color--main">
                 <p>Albert Jhon.</p>
@@ -356,7 +359,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col--no-pading">
+          <div class="col-3 col--no-pading">
             <div class="carousels-team__box">
               <div class="carousels-team__header text-center color--main">
                 <p>Albert Jhon.</p>
@@ -392,7 +395,7 @@
 
         <div class="row justify-content-around reviews-margin-b">
 
-          <div class="col-md-3 col--no-pading">
+          <div class="col-3 col--no-pading">
             <div class="carousels-review__box">
               <div class="carousels-review__header text-center">
                 <i class="fas fa-star"></i>
@@ -421,7 +424,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col--no-pading">
+          <div class="col-3 col--no-pading">
             <div class="carousels-review__box">
               <div class="carousels-review__header text-center">
                 <i class="fas fa-star"></i>
@@ -450,7 +453,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col--no-pading">
+          <div class="col-3 col--no-pading">
             <div class="carousels-review__box">
               <div class="carousels-review__header text-center">
                 <i class="fas fa-star"></i>
@@ -481,7 +484,7 @@
 
         </div>
 
-        <img class="carousels__oval" src="img/review-oval.svg">
+        <img class="carousels__oval" src="img/review-oval.svg" data-aos="fade-in" data-aos-once="true">
       </div>
     </section>
 
@@ -542,6 +545,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/progressbar.min.js"></script>
+    <script src="vendor/aos/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
