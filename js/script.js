@@ -1,6 +1,34 @@
+loadSpinner();
+
+function loadSpinner() {
+  setTimeout(showPage, 1400);
+}
+
+function showPage() {
+  $('.spinner').css('display', 'none');
+  $('.page-content').css('visibility', 'visible');
+  $('.page-content').addClass("visible");
+}
+
+var elemTop = $(".circle-progress").offset().top;
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    // console.log('elem top' + elemTop);
+    // console.log('docViewBottom' + docViewBottom);
+    // return ((docViewBottom >= elemTop) && (elemTop >= docViewTop));
+}
+
 // Progress bars
 
-var bar = new ProgressBar.Circle('#progress-circle1', {
+var bar1 = new ProgressBar.Circle('#progress-circle1', {
   color: '#FF6065',
   // This has to be the same size as the maximum width to
   // prevent clipping
@@ -28,12 +56,10 @@ var bar = new ProgressBar.Circle('#progress-circle1', {
   }
 });
 // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
-
-bar.animate(0.9);  // Number from 0.0 to 1.0
+bar1.text.style.fontSize = '2rem';
 
 
-var bar = new ProgressBar.Circle('#progress-circle2', {
+var bar2 = new ProgressBar.Circle('#progress-circle2', {
   color: '#71B3FF',
   // This has to be the same size as the maximum width to
   // prevent clipping
@@ -61,12 +87,10 @@ var bar = new ProgressBar.Circle('#progress-circle2', {
   }
 });
 // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
-
-bar.animate(0.5);  // Number from 0.0 to 1.0
+bar2.text.style.fontSize = '2rem';
 
 
-var bar = new ProgressBar.Circle('#progress-circle3', {
+var bar3 = new ProgressBar.Circle('#progress-circle3', {
   color: '#AB71FF',
   // This has to be the same size as the maximum width to
   // prevent clipping
@@ -94,9 +118,46 @@ var bar = new ProgressBar.Circle('#progress-circle3', {
   }
 });
 // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
+bar3.text.style.fontSize = '2rem';
+//console.log(elemTop);
 
-bar.animate(0.75);  // Number from 0.0 to 1.0
+function allInView() {
+  var docViewTop = $(window).scrollTop();
+  docViewBottom = docViewTop + $(window).height();
+
+  // if (isScrolledIntoView($(".circle-progress"))) {
+  //   bar1.animate(0.9);  // Number from 0.0 to 1.0
+  //   bar2.animate(0.5);  // Number from 0.0 to 1.0
+  //   bar3.animate(0.75);  // Number from 0.0 to 1.0
+  // }
+
+  
+
+  console.log("docViewBottom: " + docViewBottom);
+  return docViewBottom;
+}
+
+//$(window).scroll(allInView);
+
+
+function animateProgress() {
+  bar1.animate(0.9);  // Number from 0.0 to 1.0
+  bar2.animate(0.5);  // Number from 0.0 to 1.0
+  bar3.animate(0.75);  // Number from 0.0 to 1.0
+}
+
+var docViewBottom;
+var executed = false;
+$(window).scroll(function() {
+  var docViewTop = $(window).scrollTop();
+  docViewBottom = docViewTop + $(window).height();
+
+  if(docViewBottom > elemTop + 100 && executed === false) {
+    animateProgress(docViewBottom);
+    executed = true;
+  }
+  
+});
 
 AOS.init({
   duration: 1000
