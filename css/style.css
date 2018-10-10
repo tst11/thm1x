@@ -231,7 +231,9 @@ body {
 
 .carousels-team__box,
 .carousels-review__box {
+  width: 80%;
   padding: 25px 20px;
+  margin: 20px auto;
   min-height: 341px;
   position: relative;
 }
@@ -496,4 +498,25 @@ iframe {
 
 .page-content.visible {
   opacity: 1;
+}
+
+.owl-nav {
+  position: relative;
+}
+
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel .owl-nav button.owl-next {
+  font-size: 50px;
+  line-height: 0.6;
+}
+
+.owl-next {
+  position: absolute;
+  right: 0;
+  top: -200px;
+}
+
+.owl-prev {
+  position: absolute;
+  top: -200px;
 }

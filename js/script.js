@@ -162,3 +162,7 @@ $(window).scroll(function() {
 AOS.init({
   duration: 1000
 });
+
+$(".owl-carousel").owlCarousel({
+  nav:true
+});
