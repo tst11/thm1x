@@ -164,5 +164,6 @@ AOS.init({
 });
 
 $(".owl-carousel").owlCarousel({
-  nav:true
+  nav:true,
+  loop:true
 });

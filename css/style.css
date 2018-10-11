@@ -342,7 +342,7 @@ body {
 
 .carousels__heading {
   margin-top: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
   color: #fff;
 }
 
@@ -509,17 +509,12 @@ iframe {
 .owl-carousel .owl-nav button.owl-next span {
   font-size: 50px;
   line-height: 0.6;
-  color: #fff;
-  /*text-shadow: 0 0px 13px rgba(0, 0, 0,0.42);*/
+  color: #C5C3C3;
 }
 
 .owl-carousel .owl-nav button.owl-prev:focus, 
 .owl-carousel .owl-nav button.owl-next:focus {
   outline: none;
-}
-
-.owl-carousel .owl-nav button.owl-prev span {
-  color: #FF6061;
 }
 
 .owl-next {
@@ -549,4 +544,9 @@ iframe {
 
 .owl-carousel button.owl-dot.active {
   background: #C5C3C3;
+}
+
+.owl-carousel.row {
+  margin-left: 0;
+  margin-right: 0;
 }
