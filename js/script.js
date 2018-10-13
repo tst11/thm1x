@@ -1,14 +1,26 @@
-loadSpinner();
+//loadSpinner();
 
-function loadSpinner() {
-  setTimeout(showPage, 1400);
-}
+// function loadSpinner() {
+//   setTimeout(showPage, 1400);
+// }
 
-function showPage() {
+$(window).on('load', function(){
+  $(window).scrollTop(0);
   $('.spinner').css('display', 'none');
   $('.page-content').css('visibility', 'visible');
   $('.page-content').addClass("visible");
-}
+})
+
+$('.to-top').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+// function showPage() {
+//   $('.spinner').css('display', 'none');
+//   $('.page-content').css('visibility', 'visible');
+//   $('.page-content').addClass("visible");
+// }
 
 var elemTop = $(".circle-progress").offset().top;
 
