@@ -126,6 +126,10 @@
     overflow: hidden;
   }
 
+  nav {
+    background: linear-gradient(to left, #FF6060, #FF6095);
+  }
+
   .header__path {
     width: auto;
   }
@@ -160,11 +164,25 @@
   .video-box__oval {
     right: -335px;
   }
+
+  .footer__email,
+  .footer__btn {
+    width: 100%;
+  }
 }
 
 @media (min-width: 922px) and (max-width: 1199.98px) {
   .video-box__oval {
     right: -250px;
+  }
+
+  .owl-carousel {
+    width: 95%;
+  }
+
+  .owl-carousel.row {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

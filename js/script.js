@@ -1,9 +1,3 @@
-//loadSpinner();
-
-// function loadSpinner() {
-//   setTimeout(showPage, 1400);
-// }
-
 $(window).on('load', function(){
   $(window).scrollTop(0);
   $('.spinner').css('display', 'none');
@@ -14,6 +8,14 @@ $(window).on('load', function(){
 $('.to-top').click(function() {
   $('html, body').animate({ scrollTop: 0 }, "slow");
   return false;
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
 
 // function showPage() {
@@ -177,5 +179,29 @@ AOS.init({
 
 $(".owl-carousel").owlCarousel({
   nav:true,
-  loop:true
+  loop:true,
+  responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        576:{
+            items:2,
+            nav:false
+        },
+        992:{
+            items:3,
+            nav:true
+        }
+    }
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("to-top").style.display = "block";
+    } else {
+        document.getElementById("to-top").style.display = "none";
+    }
+}

@@ -465,6 +465,7 @@ footer {
 }
 
 .to-top {
+  display: none;
   z-index: 999;
   position: fixed;
   bottom: 30px;
@@ -569,4 +570,13 @@ iframe {
 .owl-carousel.row {
   margin-left: 0;
   margin-right: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
 }
