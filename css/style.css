@@ -13,11 +13,12 @@ body {
 }
 
 nav {
-  position: absolute !important;
-  top: 0 !important;
-  width: 100% !important;
   z-index: 9999;
   color: #fff !important;
+}
+
+.nav-color {
+  background: linear-gradient(to left, #FF6060, #FF6095);
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
@@ -26,6 +27,10 @@ nav {
 
 .navbar-light .navbar-toggler {
   border-color: #fff;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }
 
 .toggler-clr .navbar-toggler-icon {
@@ -107,14 +112,17 @@ nav {
 }
 
 .feature-services__icon {
+  display: block;
+  margin: 0 auto 15px;
   font-size: 40px;
-  margin-right: 18px;
+  /*margin-right: 18px;*/
 }
 
 .feature-services__title {
   display: inline-block;
   position: relative;
   bottom: 5px;
+  margin-bottom: 0;
 }
 
 .feature-services__button {
@@ -424,7 +432,11 @@ footer {
 
 .scrollable-box {
   overflow-y: scroll;
-  /*padding-right: 7px;*/
+}
+
+.scrollable-box::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent; 
 }
 
 /*.scrollable-box::-webkit-scrollbar {

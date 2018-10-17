@@ -199,6 +199,12 @@ $(".owl-carousel").owlCarousel({
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        $('nav').addClass('nav-color');
+    } else {
+        $('nav').removeClass('nav-color');
+    }
+
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("to-top").style.display = "block";
     } else {
