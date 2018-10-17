@@ -436,6 +436,8 @@ footer {
 
 .scrollable-box {
   overflow-y: scroll;
+  -ms-overflow-style: none; 
+  /*overflow: auto;*/
 }
 
 .scrollable-box::-webkit-scrollbar {
