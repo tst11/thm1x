@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="803px" height="515px" viewBox="0 0 803 515" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 6 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.86081233%" y1="55.3493286%" x2="100%" y2="55.3493286%" id="linearGradient-1">
+            <stop stop-color="#5BBFC2" offset="0%"></stop>
+            <stop stop-color="#88E3B5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-605.000000, -1447.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M914.25,1961.76227 C1111.75545,1961.76227 1407.5,1777.17566 1407.5,1643.997 C1407.5,1510.81834 1236.00722,1448.52641 1038.50177,1448.52641 C840.996325,1448.52641 605,1426.78425 605,1559.96291 C605,1693.14157 716.744552,1961.76227 914.25,1961.76227 Z" id="Oval-6-Copy-2"></path>
+        </g>
+    </g>
+</svg>
