@@ -1,6 +1,5 @@
 body {
   color: #979797;
-  /* overflow: hidden; */
   width: 100%;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
@@ -40,13 +39,11 @@ nav {
 .header {
   position: relative;
   height: 750px;
-  /*background: url('../img/header-bg.png');*/
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
 .header__path {
-  /* height: 627px; */
   width: 100%;
   height: 627px;
   position: absolute;
@@ -119,7 +116,6 @@ nav {
   display: block;
   margin: 0 auto 15px;
   font-size: 40px;
-  /*margin-right: 18px;*/
 }
 
 .feature-services__title {
@@ -437,28 +433,12 @@ footer {
 .scrollable-box {
   overflow-y: scroll;
   -ms-overflow-style: none; 
-  /*overflow: auto;*/
 }
 
 .scrollable-box::-webkit-scrollbar {
     width: 0px;  
     background: transparent; 
 }
-
-/*.scrollable-box::-webkit-scrollbar {
-    width: 4px;
-}
- 
-.scrollable-box::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
- 
-.scrollable-box::-webkit-scrollbar-thumb {
-  background-color: #FF6061;
-  outline: 1px solid slategrey;
-  border-radius: 10px;
-}*/
 
 .feature-services__content p {
   height: 190px;
@@ -491,7 +471,6 @@ footer {
   cursor: pointer;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0,.22);
   background: #fff;
-  /*background: #FF6065;*/
   color: #FF6065;
   border-radius: 100%;
   width: 50px;
@@ -524,6 +503,7 @@ footer {
 iframe {
   width: 460px;
   height: 315px;
+  border: 0;
 }
 
 .page-content {
@@ -607,7 +587,6 @@ footer a:hover {
   position: fixed;
   top: calc(50% - 20px);
   left: calc(50% - 20px);
-  /*margin: 270px auto;*/
 }
 
 .double-bounce1, .double-bounce2 {
