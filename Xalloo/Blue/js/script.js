@@ -5,41 +5,6 @@ $(window).on('load', function(){
   $('.page-content').addClass("visible");
 })
 
-$('.to-top').click(function() {
-  $('html, body').animate({ scrollTop: 0 }, "slow");
-  return false;
-});
-
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
-
-// function showPage() {
-//   $('.spinner').css('display', 'none');
-//   $('.page-content').css('visibility', 'visible');
-//   $('.page-content').addClass("visible");
-// }
-
-var elemTop = $(".circle-progress").offset().top;
-
-function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-    
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    // console.log('elem top' + elemTop);
-    // console.log('docViewBottom' + docViewBottom);
-    // return ((docViewBottom >= elemTop) && (elemTop >= docViewTop));
-}
-
 // Progress bars
 
 var bar1 = new ProgressBar.Circle('#progress-circle1', {
@@ -69,7 +34,6 @@ var bar1 = new ProgressBar.Circle('#progress-circle1', {
 
   }
 });
-// bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar1.text.style.fontSize = '2rem';
 
 
@@ -100,7 +64,6 @@ var bar2 = new ProgressBar.Circle('#progress-circle2', {
 
   }
 });
-// bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar2.text.style.fontSize = '2rem';
 
 
@@ -131,28 +94,22 @@ var bar3 = new ProgressBar.Circle('#progress-circle3', {
 
   }
 });
-// bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar3.text.style.fontSize = '2rem';
-//console.log(elemTop);
 
-function allInView() {
-  var docViewTop = $(window).scrollTop();
-  docViewBottom = docViewTop + $(window).height();
+$('.to-top').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
-  // if (isScrolledIntoView($(".circle-progress"))) {
-  //   bar1.animate(0.9);  // Number from 0.0 to 1.0
-  //   bar2.animate(0.5);  // Number from 0.0 to 1.0
-  //   bar3.animate(0.75);  // Number from 0.0 to 1.0
-  // }
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
-  
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
 
-  console.log("docViewBottom: " + docViewBottom);
-  return docViewBottom;
-}
-
-//$(window).scroll(allInView);
-
+var elemTop = $(".circle-progress").offset().top;
 
 function animateProgress() {
   bar1.animate(0.9);  // Number from 0.0 to 1.0
@@ -179,7 +136,8 @@ AOS.init({
 
 $(".owl-carousel").owlCarousel({
   nav:true,
-  loop:true,
+  loop:false,
+  rewind: true,
   responsive:{
         0:{
             items:1,
