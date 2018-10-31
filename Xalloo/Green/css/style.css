@@ -624,3 +624,16 @@ footer a:hover {
 }
 
 /* end of SPINNER STYLES*/
+
+.navbar-brand {
+  width: 135px;
+}
+
+.footer__logo {
+  width: 108px;
+}
+
+.navbar-brand img,
+.footer__logo img {
+  width: 100%;
+}

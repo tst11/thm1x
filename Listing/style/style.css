@@ -31,6 +31,12 @@ h1 span {
   color: #52AAFA;
 }
 
+p.heading {
+  color: #52AAFA;
+  font-size: 52px;
+  font-weight: bold;
+}
+
 p {
   color: #7B7B7B;
   max-width: 490px;
@@ -77,6 +83,10 @@ footer {
   margin-top: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.headline-p {
+  padding-top: 150px;
 }
 
 @media (max-width: 991.98px) {
